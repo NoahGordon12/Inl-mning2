@@ -112,3 +112,6 @@ Han nämnde nåt om loop också
 
 + incomeTotal
 - expensesTotal
+
+
+ÄNDRING
