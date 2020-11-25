@@ -1,5 +1,6 @@
 var total = []
-
+let income = [0]
+let expenses = [0]
 
 //inkomst div vi måste läsa den med queryselector
 //uppdatera användarens inmatade data med hjälp av text
@@ -22,7 +23,7 @@ function add(event){
         // skapar en p-tagg
         var p = document.createElement("P")
         // anger innehållet i p-taggen
-        p.innerHTML = inputDescription + " " + inputValue
+        p.innerHTML = `${inputDescription} ${inputValue}`
 
         //Refererar till elementet med id "incomeaaa"
         var incomeElement = document.querySelector("#income")
@@ -31,7 +32,12 @@ function add(event){
         incomeElement.appendChild(p)
 
         // pushar värdet till total listan
-        total.push(Number(inputValue))
+        income.push(Number(inputValue))
+
+        const totalIncomeElement = document.querySelector("#ink-total")
+        totalIncomeElement.innerHTML = income.reduce((a,b) => a+b)
+
+        console.log(total)
 
     }
 
@@ -42,7 +48,7 @@ function add(event){
         var p = document.createElement("p")
 
         // anger innehållet i p-taggen
-        p.innerHTML = inputDescription + " " + inputValue
+        p.innerHTML = `${inputDescription} ${inputValue}`
 
         var incomeElement = document.querySelector("#expenses")
            
@@ -50,7 +56,10 @@ function add(event){
         incomeElement.appendChild(p)    
 
         // pushar minusvärdet till totala listan
-        total.push(Number(-inputValue))
+        expenses.push(Number(inputValue))
+
+        const totalexpensesElement = document.querySelector("#utg-total")
+        totalexpensesElement.innerHTML = expenses.reduce((a,b) => a+b)
             
     }
 
@@ -63,12 +72,7 @@ function add(event){
 
 
     //utgångsvärde för totalen
-    var totalValue = 0
-
-    for (let index = 0; index < total.length; index++){
-        totalValue = totalValue + total[index]
-        //totalValue += total[index]
-    }
+    const totalValue = income.reduce((a,b) => a+b) - expenses.reduce((a,b) => a+b)
 
     console.log(totalValue)
 
@@ -106,12 +110,9 @@ clearButton.addEventListener("click", clear)
 // add()
 
 
-
+/* 
 Lägg in i if / if else och pusha totalen som tidigare!
 Han nämnde nåt om loop också
 
 + incomeTotal
-- expensesTotal
-
-
-ÄNDRING
+- expensesTotal */
