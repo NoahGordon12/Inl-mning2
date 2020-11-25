@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-inlämning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<header class="header">
+    <h1 class="rubrik">BUDGET</h1>
+</header>
+<body>
+
+<form class="formen">
+    <select id="selectOption">
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+
+    <input type="text" id="description" placeholder="Description">
+    <input type="number" id="value" placeholder="Value">
+
+    <button class="add" id="add-button">Add</button>
+
+    <button id="clear-button">Clear</button>
+</form>
+
+
+
+<div class="lista">
+    <div class="inkomstlista"  id="income">
+        <h2>Inkomstlista :</h2>
+    </div>
+
+    <div class="kostnadslista" id="expenses">
+    <h2>Kostnadslista :</h2>
+    </div>
+</div>
+
+
+
+
+
+<div class="inkomst_utgift">
+    <div class="Inkomst" id="ink-total">
+    <h2 class="inkomster-h2">Inkomster:</h2>
+    </div>
+
+    <div class="Utgift" id="utg-total">
+    <h2 class="utgifter-h2">Utgifter: </h2>
+    </div>
+</div>    
+
+
+
+<div class="total">
+    <h2>Total:    </h2>
+    <h2 id="total"> </h2>
+</div>
+
+
+</body>
+</html>  

@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(88, 86, 86);
+}
+
+.header {
+   
+}
+
+.rubrik {
+    display: flex;
+    justify-content: center;
+}
+
+.formen {
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.inkomst_utgift {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.Inkomster-h2 {
+    
+
+}
+
+.utgifter-h2 {
+
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+}
