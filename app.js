@@ -70,13 +70,7 @@ function clear(event){
     location.reload()
 }
 
-    
-    
-
-     
-
-
-//refererar till add-knappen
+//refererar till add/clear-knappen
 var addButton = document.querySelector("#add-button")
 
 var clearButton = document.querySelector("#clear-button")

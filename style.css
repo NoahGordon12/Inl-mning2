@@ -25,22 +25,13 @@ body {
     height: 10vh;
 }
 
-.Inkomster-h2 {
-    
-
-}
-
-.utgifter-h2 {
-
-}
-
 .total {
     display: flex;
     justify-content: center;
 }
 
 
-
+/*Responsive för flesta skärmar mindre än 470 resolution*/
 @media screen and (max-width: 470px) {
     body {
         color: yellow;
@@ -53,6 +44,4 @@ body {
 
     .formen {
         display: grid;
-
-
 }
