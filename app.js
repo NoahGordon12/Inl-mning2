@@ -25,7 +25,7 @@ function add(event){
         // anger innehållet i p-taggen
         p.innerHTML = `${inputDescription} ${inputValue}`
 
-        //Refererar till elementet med id "incomeaaa"
+        //Refererar till elementet med id "income"
         var incomeElement = document.querySelector("#income")
 
         // anger vart p-taggen ska vara

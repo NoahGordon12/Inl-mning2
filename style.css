@@ -18,13 +18,13 @@ body {
 
 .lista {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 50vh;
 }
 
 .inkomst_utgift {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 10vh;
 }
 
@@ -40,4 +40,12 @@ body {
 .total {
     display: flex;
     justify-content: center;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    body {
+        color: yellow;
+    }
 }
