@@ -2,11 +2,6 @@ var total = []
 let income = [0]
 let expenses = [0]
 
-//inkomst div vi måste läsa den med queryselector
-//uppdatera användarens inmatade data med hjälp av text
-
-
-
 function add(event){
     event.preventDefault()
 
@@ -38,7 +33,6 @@ function add(event){
         totalIncomeElement.innerHTML = income.reduce((a,b) => a+b)
 
         console.log(total)
-
     }
 
     //om minus
@@ -59,17 +53,8 @@ function add(event){
         expenses.push(Number(inputValue))
 
         const totalexpensesElement = document.querySelector("#utg-total")
-        totalexpensesElement.innerHTML = expenses.reduce((a,b) => a+b)
-            
+        totalexpensesElement.innerHTML = expenses.reduce((a,b) => a+b)     
     }
-
-
-         // [100, 1323, 132424, 4232]
-       // start index
-       // 0, 1, 2, 3
-       // length = 4
-       
-
 
     //utgångsvärde för totalen
     const totalValue = income.reduce((a,b) => a+b) - expenses.reduce((a,b) => a+b)
@@ -104,15 +89,3 @@ var clearButton = document.querySelector("#clear-button")
 //          1                  2     3   
 addButton.addEventListener("click", add)
 clearButton.addEventListener("click", clear)
-
-
-//kalla på en function
-// add()
-
-
-/* 
-Lägg in i if / if else och pusha totalen som tidigare!
-Han nämnde nåt om loop också
-
-+ incomeTotal
-- expensesTotal */
