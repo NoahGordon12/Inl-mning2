@@ -1,3 +1,4 @@
+/*Responsive för skärmar över 470 resolution*/
 body {
     background-color: rgb(88, 86, 86);
 }
@@ -16,7 +17,7 @@ body {
 .lista {
     display: flex;
     justify-content: space-evenly;
-    height: 50vh;
+    height: 45vh;
 }
 
 .inkomst_utgift {
